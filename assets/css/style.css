@@ -27,6 +27,10 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  
 }
 
 @media screen and (min-width: 800px) {
@@ -99,7 +103,7 @@ main {
 
 section {
   background-color: #e3e3e3;
-  padding: 1.5em 1em;
+  padding: 1em;
   margin-bottom: 2em;
   position: relative;
 }
@@ -112,6 +116,11 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  text-transform: uppercase;
+  width: 40%;
+  position: relative;
+  bottom: 45px;
+  
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -121,7 +130,7 @@ h1 {
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: -0.03em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.8em;
 }
 
 p,
@@ -187,6 +196,24 @@ h1 + p {
   border: 4px solid #00a0c6;
   outline: 4px solid #a02571;
   padding: 3px;
+  float: left;
+}
+.displayUnderline {
+  position: relative;
+}
+
+.underline {
+  right: 0;
+  top: 68px;
+  position: absolute;
+  width: 100%;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 435px) {
+  .underline{
+    display: none;
+  }
 }
 ul,
 ol {
@@ -336,6 +363,54 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
+
+.otherButton{
+  position: fixed;
+  width: 50px;
+  right: 30px;
+  z-index: 6;  
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+  .otherButton {
+    position: fixed;
+    bottom: 30%;
+    right: 30px;
+  }
+}
+
+.buttonUp{
+  position: absolute;
+  width: 50px;
+  right: 30px;
+  z-index: 6;
+  opacity: 0.9;
+}
+
+.buttonUp a i {
+  color: rgb(210, 105, 103);
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  width: 50px;
+  height: 50px;
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
+.otherButton a i {
+  color: #3f6bca;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  width: 50px;
+  height: 50px;
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
+
 
 @media screen and (min-width: 800px) {
   footer {
