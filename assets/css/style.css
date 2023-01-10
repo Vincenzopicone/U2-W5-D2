@@ -401,8 +401,9 @@ footer {
   border-radius: 6px;
   width: 50px;
   height: 50px;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding-top: 4px;
+  padding-left: 6px;
+  font-size: 2.5em;
 }
 
 .otherButton a i {
@@ -412,15 +413,17 @@ footer {
   border-radius: 6px;
   width: 50px;
   height: 50px;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding-top: 4px;
+  padding-left: 6px;
+  font-size: 2.5em;
 }
 
 .iconaTag {
   color:gray;
   position: absolute;
-  right: 50px;
+  right: 20px;
   top: 50px;
+  font-size: 3em;
 }
 
 
